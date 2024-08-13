@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///C:/Users/ACER/Documents/portpolio/index.html?#contact -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="./portopolio 1_files/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding-top: 70px;
+            background: linear-gradient(to right, #f8f9fa, #e0e0e0);
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #343a40;
+        }
+
+        .navbar .nav-link {
+            color: #fff;
+        }
+
+        .jumbotron {
+            background: url('img/stor.jpg') no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            color: white;
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .jumbotron::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .jumbotron img {
+            width: 150px; /* Ukuran besar */
+            height: 150px; /* Ukuran besar */
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .jumbotron h1,
+        .jumbotron p {
+            z-index: 1;
+            position: relative;
+        }
+
+        .contact {
+            background: linear-gradient(to right, #e0e0e0, gray);
+            padding: 60px 0;
+        }
+
+        footer {
+            background-color: #000;
+            color: gray;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: white;
+        }
+
+        header a {
+            text-decoration: none;
+            color: brown;
+            padding: 3px;
+        }
+
+        header a:hover {
+            background-color: blueviolet;
+            color: brown;
+        }
+
+        header .judul {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        header ul li {
+            display: inline-block;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: wheat;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .navbar .navbar-nav .nav-link:hover {
+            color: gray;
+        }
+
+        .navbar .navbar-nav .nav-item {
+            position: relative;
+        }
+
+        .navbar .navbar-nav .nav-item::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: blue;
+            width: 0;
+            content: "";
+            height: 4px;
+            transition: width 0.5s ease;
+        }
+
+        .navbar .navbar-nav .nav-item:hover::after {
+            width: 100%;
+        }
+
+        /* Animasi Fade-In saat Scroll */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            transform: translateY(20px);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Animasi Hover pada Kartu */
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animasi Zoom pada Gambar */
+        .card-img-top {
+            transition: transform 0.8s ease;
+        }
+
+        .card:hover .card-img-top {
+            transform: scale(1.2);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .social-icons a {
+            font-size: 1.5rem;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            color: #007bff;
+        }
+        .contact {
+    background: url('img/3D.jpg') ;
+    background-size: cover;
+    color: white; /* Warna teks agar kontras dengan latar belakang */
+    padding: 60px 0;
+    position: relative;
+}
+
+.contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Overlay untuk membuat teks lebih terbaca */
+    z-index: 1;
+}
+
+.contact .container {
+    position: relative;
+    z-index: 2;
+}
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="file:///C:/Users/ACER/Documents/portpolio/index.html?#home">M. Dedi Muchsoleh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="file:///C:/Users/ACER/Documents/portpolio/index.html?#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="file:///C:/Users/ACER/Documents/portpolio/index.html?#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="file:///C:/Users/ACER/Documents/portpolio/index.html?#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="file:///C:/Users/ACER/Documents/portpolio/index.html?#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron">
+        <div class="container">
+            <img src="./portopolio 1_files/IMG_20240626_074414_498 - Copy.jpg" class="img-thumbnail rounded-circle mb-4" alt="gambar">
+            <h1 class="display-4">Web Development</h1>
+            <p class="lead">M. Dedi Muchsoleh</p>
+        </div>
+    </header>
+
+    <section class="social-icons text-center">
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="me-2"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/yourprofile" target="_blank" class="me-2"><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About</h2>
+            <p class="fade-in visible">Saya adalah seorang junior Web Developer yang terbiasa membangun situs web menggunakan framework bootstrap. Kami juga berpengalaman dalam HTML, CSS, dan JavaScript untuk menciptakan aplikasi web yang responsif dan dinamis.</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card fade-in visible">
+                        <img src="./portopolio 1_files/much1.jpeg" class="card-img-top" alt="HTML Project">
+                        <div class="card-body">
+                            <h5 class="card-title">HTML Project</h5>
+                            <p class="card-text">Deskripsi tentang proyek HTML.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card fade-in visible">
+                        <img src="./portopolio 1_files/much2.jpg" class="card-img-top" alt="CSS Project">
+                        <div class="card-body">
+                            <h5 class="card-title">CSS Project</h5>
+                            <p class="card-text">Deskripsi tentang proyek CSS.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card fade-in visible">
+                        <img src="./portopolio 1_files/much 3.jpeg" class="card-img-top" alt="JavaScript Project">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript Project</h5>
+                            <p class="card-text">Deskripsi tentang proyek JavaScript.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact text-center">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nama" class="form-label">Nama</label>
+                    <input type="text" id="nama" class="form-control" placeholder="Masukan Nama">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" class="form-control" placeholder="Masukan Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea id="message" class="form-control" rows="5" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+            <div class="contact-info mt-4">
+                <p>Email: <a href="mailto:your-sholeh011087@gmail.com">your-sholeh011087@gmail.com</a></p>
+                <p>Phone: +6282574917313</p>
+            </div>
+            <div class="social-icons mt-4">
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="me-2"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/yourprofile" target="_blank" class="me-2"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2024 m_dedi08 . <a href="https://fa-instagram.com/m_dedi08" class="text-white">Follow me on Instagram</a></p>
+    </footer>
+
+    <script src="./portopolio 1_files/bootstrap.bundle.min.js.download"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const elements = document.querySelectorAll('.fade-in');
+            const windowHeight = window.innerHeight;
+
+            function checkPosition() {
+                elements.forEach(element => {
+                    const positionFromTop = element.getBoundingClientRect().top;
+
+                    if (positionFromTop - windowHeight <= 0) {
+                        element.classList.add('visible');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', checkPosition);
+            checkPosition();
+        });
+    </script>
+
+
+
+</body></html>
